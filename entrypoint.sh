@@ -19,5 +19,6 @@ EOF
 
 git_setup
 
-echo ::debug:: username — $GITHUB_ACTOR, branch — $INPUT_BRANCH, commit message — $INPUT_COMMIT_MESSAGE
-echo ::debug:: $(cat $HOME/.netrc)
+echo username — $GITHUB_ACTOR, branch — $INPUT_BRANCH, commit message — $INPUT_COMMIT_MESSAGE
+echo $(cat $HOME/.netrc)
+
