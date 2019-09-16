@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-git_setup ( ) {
+git_setup() {
   cat <<- EOF > $HOME/.netrc
 		machine github.com
 		login $GITHUB_ACTOR
@@ -19,6 +19,11 @@ EOF
 
 git_setup
 
+# debug
 echo username — $GITHUB_ACTOR, branch — $INPUT_BRANCH, commit message — $INPUT_COMMIT_MESSAGE
 echo $(cat $HOME/.netrc)
 
+git checkout $INPUT_BRANCH
+git add .
+git commit -m $INPUT_COMMIT_MESSAGE
+git push --set-upstream origin $INPUT_BRANCH
