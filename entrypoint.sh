@@ -23,6 +23,8 @@ git_setup
 echo username — $GITHUB_ACTOR, branch — $INPUT_BRANCH, commit message — $INPUT_COMMIT_MESSAGE
 echo $(cat $HOME/.netrc)
 
+git remote update
+git fetch
 git checkout $INPUT_BRANCH
 git add .
 git commit -m $INPUT_COMMIT_MESSAGE
