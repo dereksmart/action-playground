@@ -28,4 +28,4 @@ git fetch
 git checkout $INPUT_BRANCH
 git add .
 git commit -m $INPUT_COMMIT_MESSAGE
-git push --set-upstream origin $INPUT_BRANCH
+git push origin $INPUT_BRANCH
