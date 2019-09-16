@@ -27,5 +27,7 @@ git remote update
 git fetch --all
 git checkout $INPUT_BRANCH
 git add .
+git status
+echo "here ya go"
 git commit -m $INPUT_COMMIT_MESSAGE
 git push --set-upstream origin $INPUT_BRANCH
