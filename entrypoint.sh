@@ -24,8 +24,8 @@ echo username — $GITHUB_ACTOR, branch — $INPUT_BRANCH, commit message — $I
 echo $(cat $HOME/.netrc)
 
 git remote update
-git fetch
+git fetch --all
 git checkout $INPUT_BRANCH
 git add .
 git commit -m $INPUT_COMMIT_MESSAGE
-git push $INPUT_BRANCH
+git push --set-upstream origin $INPUT_BRANCH
