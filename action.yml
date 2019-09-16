@@ -12,7 +12,6 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-
 # action.yml
 #name: 'Hello World'
 #description: 'Greet someone and record the time'
