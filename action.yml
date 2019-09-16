@@ -5,7 +5,8 @@ inputs:
   branch:
     description: 'Branch ref to push the changes to'
     required: false
-  commit_message: 'Write the commit message'
+  commit_message:
+    description: 'Write the commit message'
     required: false
     default: 'Automated commit'
 runs:
